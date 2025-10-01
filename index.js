@@ -2,15 +2,20 @@ const express = require("express");
 
 const app = express();
 
-function getPrimeNumbers(n) {
-    let primeNumbers = [1];
-    let num = 2;
+function getPrimeNumbers(n, init = 1, reverse = false) {
+    let primeNumbers = [];
 
     while (primeNumbers.length < n) {
-        if (isPrime(num)) primeNumbers.push(num);
-        num++;
+        if (isPrime(init)) primeNumbers.push(init);
+        init++;
     }
 
+    if (reverse) {
+        return {
+            "primos": primeNumbers.reverse()
+        }
+    }
+    
     return {
         "primos": primeNumbers
     }
@@ -28,16 +33,38 @@ app.get("/", (req, res) => {
     res.send("Hello, world!");
 });
 
-app.get("/primos/3", (req, res) => {
-    res.send(JSON.stringify(getPrimeNumbers(3)));
+//criando varios endpoints
+
+// app.get("/primos/3", (req, res) => {
+//     res.send(JSON.stringify(getPrimeNumbers(3)));
+// });
+
+// app.get("/primos/4", (req, res) => {
+//     res.send(JSON.stringify(getPrimeNumbers(4)));
+// });
+
+// app.get("/primos/5", (req, res) => {
+//     res.send(JSON.stringify(getPrimeNumbers(5)));
+// });
+
+// usando parametros
+app.get("/primos/:num", (req, res) => {
+    res.send(JSON.stringify(getPrimeNumbers(req.params.num)));
 });
 
-app.get("/primos/4", (req, res) => {
-    res.send(JSON.stringify(getPrimeNumbers(4)));
+//primos a partir de um numero
+app.get("/primos/:num/ini/:init", (req, res) => {
+    res.send(JSON.stringify(getPrimeNumbers(req.params.num, req.params.init)));
 });
 
-app.get("/primos/5", (req, res) => {
-    res.send(JSON.stringify(getPrimeNumbers(5)));
+//reverter
+app.get("/primos/:num/rev", (req, res) => {
+    res.send(JSON.stringify(getPrimeNumbers(req.params.num, true)));
+});
+
+//reverter: primos a partir de um numero
+app.get("/primos/:num/ini/:init/rev", (req, res) => {
+    res.send(JSON.stringify(getPrimeNumbers(req.params.num, req.params.init, true)));
 });
 
 app.listen(8080, () => {
