@@ -1,0 +1,54 @@
+{
+    "categorias": [
+        {
+            "id": "5d842e34-a046-4304-a9ba-172d78b5abac",
+            "nome": "Cultura"
+        },
+        {
+            "id": "2fdbeedb-1284-4792-acfd-33e709cd26ea",
+            "nome": "Esportes"
+        },
+        {
+            "id": "96ba3a59-dec9-4392-a2e7-d5f7e52b9902",
+            "nome": "Tecnologia"
+        }
+    ],
+    "noticias": [
+        {
+            "id": "c14f7486-72cb-48b7-8b0e-06ee0bd0a006",
+            "titulo": "Superman",
+            "texto": "O melhor personagem do novo superman é o cachorro",
+            "categoria": "5d842e34-a046-4304-a9ba-172d78b5abac"
+        },
+        {
+            "id": "0b798a19-10bd-4d6f-8350-5c4f272519e5",
+            "titulo": "Quarteto fantástico",
+            "texto": "Já o robozinho foi o melhor no novo filme do quarteto...",
+            "categoria": "5d842e34-a046-4304-a9ba-172d78b5abac"
+        },
+        {
+            "id": "f1b98e94-8e9f-410f-8259-6eb0a0ddffc6",
+            "titulo": "Clássico do Futebol",
+            "texto": "Time A vence Time B em jogo emocionante com gol nos acréscimos.",
+            "categoria": "2fdbeedb-1284-4792-acfd-33e709cd26ea"
+        },
+        {
+            "id": "a1eb58bb-a594-453b-b749-28c9c83579d7",
+            "titulo": "Olimpíadas 2028",
+            "texto": "Cidade X será a próxima sede das Olimpíadas.",
+            "categoria": "2fdbeedb-1284-4792-acfd-33e709cd26ea"
+        },
+        {
+            "id": "bc490703-b3c4-4a0f-b32e-b26483557013",
+            "titulo": "Nova Inteligência Artificial",
+            "texto": "Empresa Y lança IA que promete revolucionar o atendimento ao cliente.",
+            "categoria": "96ba3a59-dec9-4392-a2e7-d5f7e52b9902"
+        },
+        {
+            "id": "12d673cd-9922-4f50-8bb6-acb901132a9c",
+            "titulo": "Lançamento de Smartphone",
+            "texto": "Novo modelo de celular chega ao mercado com câmera de 200MP.",
+            "categoria": "96ba3a59-dec9-4392-a2e7-d5f7e52b9902"
+        }
+    ]
+}

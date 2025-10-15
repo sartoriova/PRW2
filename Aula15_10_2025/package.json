@@ -1,0 +1,32 @@
+{
+  "name": "exercicio_pratico_express_prw2_2025_2",
+  "version": "1.0.0",
+  "description": "Exercicio feito apenas para praticar o REST usando Express com um JSON local",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trojahn/Exercicio_Pratico_Express_PRW2_2025_2.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "REST",
+    "Webservice"
+  ],
+  "author": "Tiago H. Trojahn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trojahn/Exercicio_Pratico_Express_PRW2_2025_2/issues"
+  },
+  "homepage": "https://github.com/Trojahn/Exercicio_Pratico_Express_PRW2_2025_2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "uuid": "^13.0.0"
+  }
+}
